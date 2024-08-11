@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.search-container{
+    background-color: #f8f8f8;
+}
+
+.search-container button svg{
+    fill: #333
+}
+
+.search-container button:active {
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #ffff;
+    height: 60px;
+    z-index: 1;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    width: 230px;
+    height: calc(100vh - 60px);
+    padding:0px 10px 25px 10px;
+    top: 60px;
+    box-sizing: border-box;
+}
+
+.nav-item{
+    display: flex;
+    padding: 5px 10px;
+    justify-content: start;
+    align-items: center;
+    margin: 8px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.subscription{
+    width: 100%;
+}
+
+.youtuber{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.nav-item:hover,
+.subscribe:hover{
+    background-color: #f8f8f8;
+}
+
+.icons-svg,
+.icons-img{
+    padding-right: 25px;
+}
+
+
+.icons-img img{
+    height: 30;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.img-wrapper p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.verify{
+    height: 4px;
+    width: 4px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.nav-item svg{
+    width: 20%;
+}
+
+.youtube-svg{
+    margin-right: 20px;
+}
+.footer-links{
+    padding: 10px 10px 0 10px;
+}
+
+.footer-links a{
+    font-size: 13px;
+    color: #606060;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.copy-right{
+    color: #909090;
+    font-size: 12px;
+    padding: 10px 10px 0 10px;
+}
+
+nav:hover{
+    overflow-y: auto;
+}
+nav::-webkit-scrollbar {
+    width: 6px; 
+}
+
+nav::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+
+.recent-header {
+    overflow: hidden;
+    width: 100%; 
+    padding: 10px 0; 
+    position: fixed;
+    top: 0;
+    margin: 60px 0 0 230px;
+    background-color: #fff;
+    z-index: 1;
+    height: 60px;
+    
+
+}
+
+.swiper-container {
+    display: flex;
+    overflow-x: scroll; 
+    scrollbar-width: none; 
+}
+
+.swiper-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.swiper-container button{
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    color: #0f0f0f;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 20px;
+    flex-shrink: 0;
+} 
+
+main{
+    width: calc(100vw - 260px);
+    margin: 130px 240px
+    
+
+}
+
+.video-wrapper{
+    width: auto;
+    max-width: 100%;
+}
+
+.video-wrapper .thumbnail{
+    width: 100%;
+}
+
+
+
+.user-img img{
+    border-radius: 50%;
+}
+
+.about-video p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-video .channel-name,
+.about-video .view-count{
+    font-size: 14px;
+    color: #606060;
+}
+
+.overlay-time{
+    bottom: 5px;
+    right: 5px;
+}
+
+.overlay-time .time{
+    padding: 5px 7px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.6);
+}
